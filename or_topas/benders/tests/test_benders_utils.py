@@ -1085,7 +1085,7 @@ class TestBendersLastEvalResults(unittest.TestCase):
         m = self._build_abs(solver)
         self._assert_pre_eval_helpers(m.benders)
 
-    def Xtest_parallel_helpers_raise(self):
+    def test_parallel_helpers_raise(self):
         Parallel = _try_import_parallel_generator()
         if Parallel is None:
             self.skipTest("BendersGenerator_Parallel could not be imported")
