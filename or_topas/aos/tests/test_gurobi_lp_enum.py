@@ -23,7 +23,6 @@ from or_topas.util import pyomo_utils
 import warnings
 
 gurobipy, gurobi_available = attempt_import("gurobipy")
-print(f"HERE {gurobi_available=}")
 
 
 @unittest.skipUnless(gurobi_available, "Gurobi MIP solver not available")
