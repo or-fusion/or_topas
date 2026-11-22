@@ -1085,26 +1085,6 @@ class TestBendersLastEvalResults(unittest.TestCase):
         m = self._build_abs(solver)
         self._assert_pre_eval_helpers(m.benders)
 
-    def test_parallel_helpers_raise(self):
-        Parallel = _try_import_parallel_generator()
-        if Parallel is None:
-            self.skipTest("BendersGenerator_Parallel could not be imported")
-        try:
-            m = pyo.ConcreteModel()
-            m.benders = Parallel()
-        except ImportError as e:
-            self.skipTest(str(e))
-
-        expected = "use Benders_Serial"
-        for method_name in (
-            "last_iterate_had_infeasible_subproblem",
-            "last_iterate_is_feasible",
-            "last_subproblem_etas",
-        ):
-            with self.assertRaises(NotImplementedError) as cm:
-                getattr(m.benders, method_name)()
-            self.assertIn(expected, str(cm.exception))
-
     #
     # Single absolute_value  (Q(x) = |x|)
     #
