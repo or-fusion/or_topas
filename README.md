@@ -1,8 +1,8 @@
-[![Pytest Tests](https://github.com/sandialabs/or_topas/actions/workflows/pytest.yml/badge.svg?branch=main)](https://github.com/sandialabs/or_topas/actions/workflows/pytest.yml?query=branch%3Amain)
-[![codecov](https://codecov.io/gh/sandialabs/or_topas/branch/main/graph/badge.svg)](https://codecov.io/gh/sandialabs/or_topas)
+[![Pytest Tests](https://github.com/or-fusion/or_topas/actions/workflows/pytest.yml/badge.svg?branch=main)](https://github.com/or-fusion/or_topas/actions/workflows/pytest.yml?query=branch%3Amain)
+[![codecov](https://codecov.io/gh/or-fusion/or_topas/branch/main/graph/badge.svg)](https://codecov.io/gh/or-fusion/or_topas)
 [![Documentation Status](https://readthedocs.org/projects/or-topas/badge/?version=latest)](https://or-topas.readthedocs.org/en/latest/)
-[![GitHub contributors](https://img.shields.io/github/contributors/sandialabs/or_topas.svg)](https://github.com/sandialabs/or_topas/graphs/contributors)
-[![Merged PRs](https://img.shields.io/github/issues-pr-closed-raw/sandialabs/or_topas.svg?label=merged+PRs)](https://github.com/sandialabs/or_topas/pulls?q=is:pr+is:merged)
+[![GitHub contributors](https://img.shields.io/github/contributors/or-fusion/or_topas.svg)](https://github.com/or-fusion/or_topas/graphs/contributors)
+[![Merged PRs](https://img.shields.io/github/issues-pr-closed-raw/or-fusion/or_topas.svg?label=merged+PRs)](https://github.com/or-fusion/or_topas/pulls?q=is:pr+is:merged)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 # OR-Topas
