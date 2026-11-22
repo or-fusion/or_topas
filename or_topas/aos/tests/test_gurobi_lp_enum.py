@@ -9,23 +9,20 @@
 #  This software is distributed under the 3-clause BSD License.
 #  ___________________________________________________________________________
 
+import pyomo.environ as pyo
 from pyomo.common.dependencies import numpy_available
 from pyomo.common import unittest
-
 import pyomo.common.errors
+from pyomo.common.dependencies import attempt_import
+from pyomo.opt import check_available_solvers
+
 import or_topas.aos.tests.test_cases as tc
 from or_topas.aos import gurobi_enumerate_linear_solutions
 from or_topas.util import pyomo_utils
-from pyomo.opt import check_available_solvers
 
-import pyomo.environ as pyo
 import warnings
 
-gurobi_available = len(check_available_solvers("gurobi")) == 1
-
-#
-# TODO: Setup detailed tests here
-#
+gurobipy, gurobi_available = attempt_import("gurobipy")
 
 
 @unittest.skipUnless(gurobi_available, "Gurobi MIP solver not available")
